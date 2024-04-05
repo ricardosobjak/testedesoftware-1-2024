@@ -1,9 +1,15 @@
-@URL=http://localhost:8080/transaction
+#@URL=http://localhost:8080/transaction
 
 
 ### TRANSFER
 
+POST {{URL_TRANSACTION}}/deposit
+Content-Type: application/json
 
+{
+    "receiverAccountNumber": 12345,
+    "amount": 1000
+}
 
 
 ### WITHDRAW

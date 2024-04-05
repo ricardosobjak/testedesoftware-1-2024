@@ -1,17 +1,15 @@
-@URL=http://localhost:8080/account
-
-
+#@URL_ACCOUNT=http://localhost:8080/account
 
 
 ### GET ALL
-GET {{URL}}
+GET {{URL_ACCOUNT}}
 
 
 ### GET BY NUMBER
-GET {{URL}}/12345
+GET {{URL_ACCOUNT}}/12345
 
 ### CREATE
-POST {{URL}}
+POST {{URL_ACCOUNT}}
 Content-Type: application/json
 
 {
@@ -22,7 +20,7 @@ Content-Type: application/json
 }
 
 ### CREATE
-POST {{URL}}
+POST {{URL_ACCOUNT}}
 Content-Type: application/json
 
 {
@@ -34,7 +32,7 @@ Content-Type: application/json
 
 
 ### UPDATE
-PUT {{URL}}/2
+PUT {{URL_ACCOUNT}}/2
 Content-Type: application/json
 
 {
