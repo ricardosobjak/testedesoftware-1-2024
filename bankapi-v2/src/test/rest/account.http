@@ -6,7 +6,6 @@
 ### GET ALL
 GET {{URL}}
 
-
 ### GET BY NUMBER
 GET {{URL}}/12345
 
