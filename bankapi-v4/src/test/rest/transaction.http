@@ -16,7 +16,7 @@ POST {{URL_TRANSACTION}}/withdraw
 Content-Type: application/json
 
 {
-    "sourceAccountNumber": 12346,
+    "sourceAccountNumber": 12345,
     "amount": 1000
 }
 
@@ -27,6 +27,6 @@ POST {{URL_TRANSACTION}}/deposit
 Content-Type: application/json
 
 {
-    "receiverAccountNumber": 12346,
-    "amount": 200
+    "receiverAccountNumber": 12345,
+    "amount": 2000
 }
