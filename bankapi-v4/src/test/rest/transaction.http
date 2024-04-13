@@ -1,8 +1,8 @@
-@URL=http://localhost:8081/transaction
+@URL_TRANSACTION}}=http://localhost:8081/transaction
 
 
 ### TRANSFER
-POST {{URL}}/transfer
+POST {{URL_TRANSACTION}}/transfer
 Content-Type: application/json
 
 {
@@ -12,21 +12,21 @@ Content-Type: application/json
 }
 
 ### WITHDRAW
-POST {{URL}}/withdraw
+POST {{URL_TRANSACTION}}/withdraw
 Content-Type: application/json
 
 {
-    "sourceAccountNumber": 12346,
+    "sourceAccountNumber": 12345,
     "amount": 1000
 }
 
 
 
 ### DEPOSIT
-POST {{URL}}/deposit
+POST {{URL_TRANSACTION}}/deposit
 Content-Type: application/json
 
 {
-    "receiverAccountNumber": 12346,
-    "amount": 200
+    "receiverAccountNumber": 12345,
+    "amount": 2000
 }
