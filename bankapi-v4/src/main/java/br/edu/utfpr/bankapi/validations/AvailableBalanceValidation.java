@@ -17,5 +17,4 @@ public class AvailableBalanceValidation {
             throw new WithoutBalanceException();
         }
     }
-
 }
