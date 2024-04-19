@@ -80,7 +80,7 @@ public class AccountTest {
         assertEquals(0, savedAccount.getBalance()); // Verifica se o saldo inicial é 0
         BDDMockito.then(accountRepository).should().save(accountCaptor.capture()); // Confirma que save foi chamado
         Account captured = accountCaptor.getValue();
-        assertEquals("John Doe", captured.getName()); // Verifica se o nome está correto
+        assertEquals(accountDTO.name(), captured.getName()); // Verifica se o nome está correto
         assertEquals(500.0, captured.getSpecialLimit()); // Verifica se o limite especial está correto
     }
 
